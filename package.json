@@ -5,7 +5,8 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "webpack"
+    "start": "webpack --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "Suman Kalyan Chalki",
@@ -15,6 +16,7 @@
     "webpack-cli": "^3.3.9"
   },
   "devDependencies": {
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "webpack-merge": "^4.2.2"
   }
 }
