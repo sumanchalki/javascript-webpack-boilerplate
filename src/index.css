@@ -1,0 +1,12 @@
+.header {
+  margin-bottom: 0;
+}
+
+.header-text {
+  margin: 0 auto;
+}
+
+.logo svg {
+  width: 60%;
+  min-width: 50px;
+}
