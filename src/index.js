@@ -1,3 +1,5 @@
-import './index.css';
+import 'bootstrap';
+import "./bootstrap-main.scss";
+import './index.scss';
 
 alert("Hello !!!");
