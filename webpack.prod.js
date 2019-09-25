@@ -4,6 +4,7 @@ const common = require("./webpack.common");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "production",
@@ -13,6 +14,7 @@ module.exports = merge(common, {
   },
   optimization: {
     minimizer: [
+      new TerserPlugin(),
       new HtmlWebpackPlugin({
         template: "./src/template.html",
         minify: {
